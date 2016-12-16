@@ -10,6 +10,8 @@ namespace Nardax
     {
         public static string GetAppSettingsValue(this Assembly assembly, string key)
         {
+            //Hitta AppSettings-värden utifrån Assembly
+
             var configuration = ConfigurationManager.OpenExeConfiguration(assembly.Location);
 
             if (configuration.AppSettings.Settings[key] != null)
