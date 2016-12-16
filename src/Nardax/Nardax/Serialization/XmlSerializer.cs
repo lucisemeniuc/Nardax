@@ -12,7 +12,9 @@ namespace Nardax.Serialization
             //Serialiserar ett värde som xml med valfri typ
 
             using (var stream = new MemoryStream())
-            {
+            {xxxxxxxxxxxxxxxxxxxxxx
+                    xxxxxxxxxxxxxx
+                    xxxxxxxxxx
                 var xs = new XmlSerializer(typeof(T));
                 var xmlTextWriter = new XmlTextWriter(stream, Encoding.UTF8);
                 xs.Serialize(xmlTextWriter, value);

@@ -12,21 +12,9 @@ namespace Nardax.Tests
         {
             var validKey = "ValidKey";
             var expectedAppSettingVlaue = "SomeValue";
-
-            var assembly = Assembly.GetExecutingAssembly();
-            var actualAppSettingValue = assembly.GetAppSettingsValue(validKey);
-
-            Assert.AreEqual(expectedAppSettingVlaue, actualAppSettingValue);
-        }
-
-        [TestMethod]
-        [ExpectedException(typeof(IndexOutOfRangeException))]
-        public void GetAppSettingsValue_InvalidKey_ThrowsException()
-        {
-            var invalidKey = "InvalidSetting";
-
-            var assembly = Assembly.GetExecutingAssembly();
-            assembly.GetAppSettingsValue(invalidKey);
+            gggggggggggggggg
+                ggggggggggggggg
+                gggggggggggg
 
             Assert.Fail();
         }
