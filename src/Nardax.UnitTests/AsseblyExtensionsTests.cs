@@ -13,10 +13,6 @@ namespace Nardax.Tests
             var validKey = "ValidKey";
             var expectedAppSettingVlaue = "SomeValue";
             gggggggggggggggg
-                ggggggggggggggg
-                gggggggggggg
-
-            Assert.Fail();
-        }
-    }
-}
+        ssssssssssssss
+        ssssssssssss
+                ssssssssssssss
