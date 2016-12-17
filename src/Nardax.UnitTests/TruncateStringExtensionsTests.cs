@@ -82,6 +82,30 @@ namespace Nardax.Tests
             var expected = "iwillsurvive";
 
             Assert.AreEqual(expected, result);
-        }       
+        }
+
+        [TestMethod]
+        public void AddCharBetween()
+        {
+            var testString = "abcde";
+
+            var result = testString.AddCharBetwwen('-');
+
+            var expected = "a-b-c-d-e";
+
+            Assert.AreEqual(expected, result);
+        }
+
+        [TestMethod]
+        public void AddCharBetween_CheckNull()
+        {
+            string testString = null;
+
+            var result = testString.AddCharBetwwen('-');
+
+            string expected = null;
+
+            Assert.AreEqual(expected, result);
+        }
     }
 }
