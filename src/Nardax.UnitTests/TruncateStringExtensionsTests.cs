@@ -55,21 +55,10 @@ namespace Nardax.Tests
         }
 
         [TestMethod]
-        public void TruncateRight_ValueIsLarger_TruncateRemovesRightSide()
+        public void RepeatMe()
         {
-            var expected = "1";
-
-            var result = _value.TruncateRight(1);
-
-            Assert.AreEqual(expected, result);
-        }
-
-        [TestMethod]
-        public void TruncateRight_ValueIsSmaller_TruncateRemovesRightSide()
-        {
-            var expected = "123456789";
-
-            var result = _value.TruncateRight(20);
+            var expected = "käbbelkäbbelkäbbel";
+            var result = "käbbel".RepeatMe(3);
 
             Assert.AreEqual(expected, result);
         }
