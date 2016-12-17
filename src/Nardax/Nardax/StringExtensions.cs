@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Text.RegularExpressions;
 
 namespace Nardax
 {
@@ -30,8 +31,12 @@ namespace Nardax
 
             return value.Substring(0, maxLength);
         }
+	public static string RemoveWhiteChars(this string value)
+        {
+            return Regex.Replace(value, "\\s", "");
+        } 
 
-        public static string RepeatMe(this string value, int times)
+	public static string RepeatMe(this string value, int times)
         {
             var sb = new StringBuilder();
 
@@ -40,6 +45,6 @@ namespace Nardax
                 sb.Append(value);
             }
             return sb.ToString();
-        }
-    }
+        }  
+ }
 }
