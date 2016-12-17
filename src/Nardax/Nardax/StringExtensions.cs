@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Text;
 using System.Text.RegularExpressions;
 
 namespace Nardax
@@ -36,7 +37,7 @@ namespace Nardax
             return Regex.Replace(value, "\\s", "");
         } 
 
-	public static string RepeatMe(this string value, int times)
+	public static string RepeatMe(this string value, int times= 5)
         {
             var sb = new StringBuilder();
 
